@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sedgwick Ave Display');
+
+body{
+    background-color:rgb(28, 223, 230);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: rgb(28, 223, 230);
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.songList h1{
+    font-family: 'Sedgwick Ave Display' ;
+    font-size: 80px;
+}
+
+.container{
+    
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex ;
+   margin: 2px 240px;
+   max-width:65vw;
+   object-fit: cover;
+   border-radius: 2px;
+   padding: 0px;
+   background-image: url('bg.jpg');
+   
+   background-repeat: repeat-y;
+   background-size: auto;
+}
+
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+.progressbar{
+    margin-top: 20px;
+}
+
+#myProgressBar{
+    width: 90vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 56px;
+    display: flex;
+    background-color: rgb(34 205 234 / 69%);
+    color: black;
+    margin: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 50px;
+    margin: 0 1px;
+    border-radius: 34px;
+    border-width: thick;
+    border-color: rgb(255, 255, 255);
+    border : 2px solid white;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+      background-color: rgb(28, 223, 230);
+    }
+  }
